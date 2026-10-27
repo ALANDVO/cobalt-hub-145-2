@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "current_feature": "core-context-api",
+  "features": [
+    {
+      "id": "core-context-api",
+      "title": "Core Context API - PRODUCT.md/DESIGN.md loading and validation",
+      "status": "done",
+      "acceptance": [
+        "FastAPI server starts and serves health endpoint",
+        "POST /context/load accepts project root and returns parsed PRODUCT.md and DESIGN.md",
+        "Validates file existence and returns structured context",
+        "React frontend can call the API and display loaded context"
+      ],
+      "implementation": [
+        "backend/main.py",
+        "backend/context_loader.py",
+        "frontend/src/App.tsx",
+        "frontend/src/api.ts"
+      ],
+      "tests": [
+        "backend/test_context_loader.py",
+        "frontend/src/App.test.tsx"
+      ]
+    },
+    {
+      "id": "browser-extension-copy-issues",
+      "title": "Browser Extension - Copy All Issues (Issue #829)",
+      "status": "planned",
+      "acceptance": [
+        "Extension popup has 'Copy all issues' button after scan",
+        "Copied output includes page URL, total findings, each issue's name/explanation/selector/guidance",
+        "Confirmation toast shown on successful copy"
+      ],
+      "implementation": [
+        "extension/popup.ts",
+        "extension/manifest.json"
+      ],
+      "tests": [
+        "extension/test_copy_issues.ts"
+      ]
+    },
+    {
+      "id": "gitignore-init-cleanup",
+      "title": "Gitignore guidance and clean command (Issue #834)",
+      "status": "planned",
+      "acceptance": [
+        "/init suggests .gitignore entries for .impeccable/",
+        "/clean command removes stale generated files",
+        "Works with worktrees"
+      ],
+      "implementation": [
+        "backend/commands/init.py",
+        "backend/commands/clean.py"
+      ],
+      "tests": [
+        "backend/test_init_clean.py"
+      ]
+    },
+    {
+      "id": "design-sidecar-fingerprint",
+      "title": "Design sidecar fingerprint validation (Issue #846)",
+      "status": "planned",
+      "acceptance": [
+        "SHA-256 of DESIGN.md stored in sidecar on generation",
+        "Staleness check compares content fingerprint, not mtime",
+        "Legacy sidecars without fingerprint marked 'unverified' not 'stale'"
+      ],
+      "implementation": [
+        "backend/context_loader.py",
+        "backend/staleness.py"
+      ],
+      "tests": [
+        "backend/test_staleness.py"
+      ]
+    },
+    {
+      "id": "configurable-context-paths",
+      "title": "Configurable PRODUCT.md/DESIGN.md paths (Issue #1022)",
+      "status": "planned",
+      "acceptance": [
+        "contextFiles.config with independent product/design paths",
+        "Shared resolver across context, live, and design tooling",
+        "Path validation with clear errors, backward compatible"
+      ],
+      "implementation": [
+        "backend/config.py",
+        "backend/context_resolver.py"
+      ],
+      "tests": [
+        "backend/test_config_resolver.py"
+      ]
+    },
+    {
+      "id": "rtl-audit-physical-properties",
+      "title": "Audit: flag physical CSS properties on RTL pages (Issue #1113)",
+      "status": "planned",
+      "acceptance": [
+        "New Internationalization audit section (6th dimension)",
+        "Flags margin/padding/border/text-align/float/left/right on dir=rtl",
+        "Informational on LTR pages, score rescales from /20 to /24"
+      ],
+      "implementation": [
+        "backend/audit/rtl_check.py",
+        "backend/audit/scoring.py"
+      ],
+      "tests": [
+        "backend/test_rtl_audit.py"
+      ]
+    }
+  ]
+}
