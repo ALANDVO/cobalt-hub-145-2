@@ -86,3 +86,7 @@ README.md                   # Documentation
 - ✅ React frontend calls the API and displays loaded context
 - ✅ All 16 backend tests pass
 - ✅ All 7 frontend tests pass
+
+---
+
+Alan Vo · [alanvo.net](https://alanvo.net)

@@ -129,3 +129,7 @@ cobalt-hub-145-alan-vo/
 See `PLAN.md` for current feature status and roadmap.
 
 Maintainer: Alan Vo <alanvo@gmail.com>
+
+---
+
+Alan Vo · [alanvo.net](https://alanvo.net)

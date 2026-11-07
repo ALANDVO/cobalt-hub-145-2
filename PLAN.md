@@ -87,3 +87,6 @@ Implementation: `backend/audit/rtl_check.py`, `backend/audit/scoring.py`
 
 Tests: `backend/test_rtl_audit.py`
 
+---
+
+Alan Vo · [alanvo.net](https://alanvo.net)
