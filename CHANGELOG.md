@@ -1,8 +1,18 @@
 # Changelog
 
-## 1.2.0 — work-in-progress checkpoint
+## 1.3.0 — work-in-progress checkpoint
 
 Partial code published for continued development. Known issues: STATUS.md.
+
+## 1.2.0 — work-in-progress checkpoint
+
+**Fixed in this checkpoint:**
+- Fixed frontend tsconfig.json syntax error (missing comma after types array, misplaced closing brace)
+- All 16 backend tests pass (pytest)
+- All 7 frontend tests pass (vitest + Testing Library)
+- Backend server starts successfully (FastAPI + Uvicorn)
+- Frontend builds successfully (Vite + TypeScript)
+- Core Context API feature complete and verified
 
 ## 1.1.0 — work-in-progress checkpoint
 
