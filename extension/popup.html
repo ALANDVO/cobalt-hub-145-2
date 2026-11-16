@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cobalt-hub - Copy Issues</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>cobalt-hub</h2>
+    <p>Copy detected issues</p>
+    
+    <div class="status" id="status" style="margin: 1rem 0; display: none;">
+      <span id="status-text"></span>
+    </div>
+    
+    <textarea id="issues-text" rows="15" cols="50" readonly style="width: 100%; margin: 1rem 0; padding: 0.5rem; font-family: inherit; font-size: 0.9rem;"></div>
+    
+    <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+      <button id="copy-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Copy all issues</button>
+      <button id="close-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Close</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
