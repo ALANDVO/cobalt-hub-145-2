@@ -26,14 +26,15 @@
     {
       "id": "browser-extension-copy-issues",
       "title": "Browser Extension - Copy All Issues (Issue #829)",
-      "status": "planned",
+      "status": "in_progress",
       "acceptance": [
         "Extension popup has 'Copy all issues' button after scan",
         "Copied output includes page URL, total findings, each issue's name/explanation/selector/guidance",
         "Confirmation toast shown on successful copy"
       ],
       "implementation": [
-        "extension/popup.ts",
+        "extension/popup.html",
+        "extension/popup.js",
         "extension/manifest.json"
       ],
       "tests": [

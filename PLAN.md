@@ -24,14 +24,14 @@ Tests: `backend/test_context_loader.py`, `frontend/src/App.test.tsx`
 
 ### browser-extension-copy-issues — Browser Extension - Copy All Issues (Issue #829)
 
-Status: planned
+Status: in_progress
 
 Acceptance:
 - Extension popup has 'Copy all issues' button after scan
 - Copied output includes page URL, total findings, each issue's name/explanation/selector/guidance
 - Confirmation toast shown on successful copy
 
-Implementation: `extension/popup.ts`, `extension/manifest.json`
+Implementation: `extension/popup.html`, `extension/popup.js`, `extension/manifest.json`
 
 Tests: `extension/test_copy_issues.ts`
 

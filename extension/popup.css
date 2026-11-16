@@ -1,0 +1,60 @@
+/* popup.css */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.status {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.status.error {
+  background: #fef2f2;
+  border: 1px solid #f87171;
+  color: #dc2626;
+}
+
+textarea {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 200px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:focus-visible {
+  outline: 2px solid #63b3e8;
+  outline-offset: 2px;
+}
